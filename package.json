@@ -12,6 +12,7 @@
     "test": "npm run --silent test:config && npm run --silent test:config:base",
     "test:config": "cd packages/eslint-config-airbnb; npm test",
     "test:config:base": "cd packages/eslint-config-airbnb-base; npm test",
+    "test:integration": "mocha tests/integration.test.js",
     "pretravis": "npm run --silent lint",
     "travis": "npm run --silent travis:config && npm run --silent travis:config:base",
     "travis:config": "cd packages/eslint-config-airbnb; npm run travis",
@@ -42,6 +43,7 @@
   "devDependencies": {
     "markdownlint": "^0.29.0",
     "markdownlint-cli": "^0.35.0",
+    "mocha": "^10.2.0",
     "rimraf": "^6.0.1"
   },
   "overrides": {
